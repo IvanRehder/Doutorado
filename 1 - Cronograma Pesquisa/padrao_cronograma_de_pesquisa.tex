@@ -1,0 +1,118 @@
+% ------------------------------------------------------------------
+% Pacotes
+% ------------------------------------------------------------------
+
+% MARGENS
+\usepackage[lmargin=3cm,tmargin=2.5cm,rmargin=3cm,bmargin=2.5cm]{geometry}
+
+% ABNT
+\usepackage[onehalfspacing]{setspace}
+\usepackage[brazil]{babel}
+% Essencial
+\usepackage{xcolor,comment,enumerate,multirow,multicol}
+% Criar lista com letras ou numéros
+\usepackage{enumitem}
+% Matemática
+\usepackage{amsmath,amsfonts,dsfont,mathtools}
+% ABNT
+\usepackage{blindtext}
+
+% ---
+% Criar hiperlinks
+% ---
+\usepackage[hidelinks,colorlinks=false]{hyperref}
+
+\usepackage{textcomp}
+\usepackage{gensymb}
+
+
+% ---
+% Bibliografia ABNT
+% ---
+\usepackage[num,abnt-emphasize=bf,abnt-etal-cite=2,abnt-etal-list=0,abnt-etal-text=it]{abntex2cite}
+\usepackage[brazilian,hyperpageref]{backref}
+
+% ---
+% Adicionar páginas de um pdf ao texto
+% ---
+\usepackage{pdfpages}
+
+
+% ---
+% Pacotes fundamentais 
+% ---
+\usepackage[utf8]{inputenc}                                                     % Codificacao do documento (conversão automática dos acentos)
+\usepackage[T1]{fontenc}                                                        % Selecao de codigos de fonte.
+
+\usepackage{lmodern}                                                            % Usa a fonte Latin Modern
+\usepackage{indentfirst}		                                                % Indenta o primeiro parágrafo de cada seção.
+\usepackage{nomencl} 			                                                % Lista de símbolos
+\usepackage{color}				                                                % Controle das cores
+\usepackage{graphicx, placeins}                                                 % Inclusão de gráficos
+\usepackage{tabularx}       
+\usepackage{booktabs}
+\usepackage{adjustbox}
+% Inclusão de tábelas
+\usepackage{subfigure}
+\usepackage{wrapfig}
+\usepackage{microtype} 			                                                % para melhorias de justificação
+
+% ---
+% Fazer paragrafos com códigos
+% ---
+\usepackage{listings}
+
+% ---
+% Criação de um indice
+% ---
+\usepackage{imakeidx}
+
+% ---
+% Formatação dos capitulos e seções
+% ---
+\usepackage{titlesec}
+    \titleformat{\section} %command
+        [hang] %shape
+        {\bfseries\Large} %format
+        {\textbf{\thesection.\hspace{1em}}} %label
+        {0.5ex} %sep
+        {\vspace{0ex}} %before code
+        [\vspace{0ex}] %% after code
+
+    \titleformat{\subsection} %command
+        [hang] %shape
+        {\bfseries\large} %format
+        {\textbf{\thesubsection \hspace{0.5em} - \hspace{0.5em}}} %label
+        {0.5ex} %sep
+        {\vspace{0ex}} %before code
+        [\vspace{0ex}] %% after code
+
+
+    %\titleformat{\subsubsection} %command
+    
+    %    [hang] %shape
+    
+    %    {\bfseries\medium} %format
+    
+    %    {\textbf{\hspace{1em}}} %label
+    
+    %    {0.5ex} %sep
+    
+    %    {\vspace{0ex}} %before code
+    
+    %    [\vspace{0ex}] %% after code
+    
+    
+    %\titlespacing{\section}{12pc}{1.5ex plus .1ex minus .2ex}{1pc}
+
+% ------------------------------------------------------------------
+% Comandos
+% ------------------------------------------------------------------
+    
+% Keywords command
+\providecommand{\keywords}[1]
+{
+  \small	
+  \textbf{\textit{Palavras-chave:}} #1
+}
+
